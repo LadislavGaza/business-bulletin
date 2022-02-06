@@ -1,4 +1,4 @@
-# RPG DATABÁZA
+# ZADANIE 4 - RPG DATABÁZA
 
 Datábaza umožňuje implementáciu online RPG hry hranej na 2D ploche. Hru je možné rozšírovať o nové predmety, úlohy, mobov, bossov, profesie a schopnosti postáv a taktiež rozšírovať mapu o nové body a oblasti, z ktorých každá môže mať v sebe bossa oblasti.
 
@@ -55,6 +55,10 @@ Predstavuje asociačnú tabuľku medzi postavami a ich úlohami. Stĺpec *comple
 ## quests
 Obsahuje herné úlohy, ktoré môžu postavy plniť. Úlohy sú levelovo obmedzené, počínajúc od levelu 1. Každá sa začína na nejakom bode na mape a taktiež musí mať exp odmenu za splnenie. Niektoré môžu mať za odmenu aj nejaký predmet.
 
+U hráča sa quest zobrazí následovne:
+
+<img src="images/dbs-02.png">
+
 ## quest objectives
 Táto tabuľka existuje na definovanie podmienok na splnenie úlohy. Podmienka hovorí o tom, koľko predmetov má postava nazbierať, poprípade koľko mobov nejakého druhu má zabiť. Úloha sa považuje za splnenú ak boli splnené aj všetky jej podmienky.
 
@@ -79,6 +83,8 @@ Títo mobovia predstavujú tých, ktorí sa zjavili hráčom a pohybujú sa vo s
 
 ## areas
 Herná mapa je rozdelená na územia, ktoré sú levelovo obmedzené (na obrázku rozlíšené farbami). Postava nemôže vstúpiť na políčko, ktoré patrí do územia s vyšším požadovaným levelom aký má.
+
+<img src="images/dbs-01.png">
 
 ## map_points
 Obsahuje body, ktoré tvoria hernú plochu. Každý bod má svoje súradnice a patrí do nejakej oblasti.
